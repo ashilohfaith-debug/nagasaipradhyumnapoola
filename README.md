@@ -21,9 +21,7 @@
 </picture>
 
 <br><br>
-
-<a href="#"><img alt="React" src="https://img.shields.io/badge/React-20232a.svg?logo=react&logoColor=%2361DAFB"></a>
- <br>
+<img src="https://techstack-generator.vercel.app/react-icon.svg" alt="icon" width="55" height="55" />
 
 <pre>
 ╔══════════════════════════════════════════════════════════════════╗

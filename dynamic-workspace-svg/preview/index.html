@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workspace SVG – Preview</title>
+
+  <!--
+    Load both digital-display fonts from Google Fonts so the SVG clock
+    renders correctly even before Digital-7 is locally installed.
+    "Share Tech Mono" is the reliable fallback.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    /* ── Reset / base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d0d14;
+      --surface: #161622;
+      --border: #2a2a3a;
+      --accent: #FF2040;
+      --text: #c8c8d8;
+      --text-dim: #666680;
+      --radius: 8px;
+      --font: system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 2rem 1rem;
+    }
+
+    main {
+      width: 100%;
+      max-width: 1100px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    /* ── Header ── */
+    header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    header h1 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+    .badge {
+      font-size: 0.7rem;
+      padding: 2px 8px;
+      border-radius: 99px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    /* ── Controls panel ── */
+    .controls {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 2rem;
+      align-items: flex-end;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    label {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    input, select {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      color: var(--text);
+      font-size: 0.95rem;
+      padding: 0.4rem 0.65rem;
+      font-family: 'Share Tech Mono', monospace;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    input:focus, select:focus {
+      border-color: var(--accent);
+    }
+
+    .actions {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      align-items: flex-end;
+    }
+    button {
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.45rem 1rem;
+      transition: opacity 0.15s, background 0.15s;
+    }
+    button:hover { opacity: 0.85; }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-secondary { background: var(--border); color: var(--text); }
+
+    .autorefresh-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.82rem;
+      color: var(--text-dim);
+      width: 100%;
+    }
+    .countdown {
+      font-family: 'Share Tech Mono', monospace;
+      color: var(--accent);
+      min-width: 2.5ch;
+    }
+
+    /* ── SVG frame ── */
+    .svg-frame {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: #000;
+    }
+    .svg-frame img {
+      width: 100%;
+      display: block;
+    }
+    .loading-overlay {
+      position: absolute;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0.55);
+      font-size: 0.9rem;
+      color: var(--text-dim);
+      letter-spacing: 0.05em;
+    }
+    .loading-overlay.visible { display: flex; }
+
+    /* ── URL display ── */
+    .url-bar {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0.6rem 1rem;
+      font-size: 0.8rem;
+      font-family: 'Share Tech Mono', monospace;
+      color: var(--text-dim);
+      word-break: break-all;
+    }
+    .url-bar span { color: var(--accent); }
+
+    /* ── Info section ── */
+    details {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0.75rem 1rem;
+    }
+    summary {
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 600;
+      user-select: none;
+    }
+    details[open] summary { margin-bottom: 0.75rem; }
+    details p, details li {
+      font-size: 0.82rem;
+      color: var(--text-dim);
+      line-height: 1.6;
+    }
+    details code {
+      font-family: 'Share Tech Mono', monospace;
+      background: var(--bg);
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-size: 0.78rem;
+    }
+    details ul { padding-left: 1.2rem; margin-top: 0.4rem; }
+  </style>
+</head>
+<body>
+<main>
+
+  <header>
+    <h1>Workspace SVG Preview</h1>
+    <span class="badge">DEV</span>
+  </header>
+
+  <!-- ── Controls ── -->
+  <div class="controls">
+
+    <div class="field">
+      <label for="tz-select">Timezone</label>
+      <select id="tz-select">
+        <option value="Asia/Kolkata" selected>Asia/Kolkata (IST, default)</option>
+        <option value="UTC">UTC</option>
+        <option value="America/New_York">America/New_York (ET)</option>
+        <option value="America/Los_Angeles">America/Los_Angeles (PT)</option>
+        <option value="America/Chicago">America/Chicago (CT)</option>
+        <option value="Europe/London">Europe/London (GMT/BST)</option>
+        <option value="Europe/Paris">Europe/Paris (CET/CEST)</option>
+        <option value="Asia/Tokyo">Asia/Tokyo (JST)</option>
+        <option value="Asia/Shanghai">Asia/Shanghai (CST)</option>
+        <option value="Australia/Sydney">Australia/Sydney (AEST)</option>
+        <option value="custom">— custom —</option>
+      </select>
+    </div>
+
+    <div class="field" id="custom-tz-field" style="display:none">
+      <label for="custom-tz">Custom timezone</label>
+      <input id="custom-tz" type="text" placeholder="e.g. Pacific/Auckland" />
+    </div>
+
+    <div class="field">
+      <label for="time-override">Override time (HH:MM)</label>
+      <input id="time-override" type="text" placeholder="live" maxlength="5" />
+    </div>
+
+    <div class="actions">
+      <button class="btn-primary" id="btn-refresh">Refresh</button>
+      <button class="btn-secondary" id="btn-open-tab">Open in new tab ↗</button>
+    </div>
+
+    <div class="autorefresh-row">
+      <input type="checkbox" id="auto-refresh" checked />
+      <label for="auto-refresh" style="text-transform:none;font-size:0.82rem">
+        Auto-refresh every minute
+      </label>
+      &nbsp;–&nbsp; next refresh in <span class="countdown" id="countdown">60</span>s
+    </div>
+
+  </div>
+
+  <!-- ── SVG preview ── -->
+  <div class="svg-frame">
+    <img id="preview-img" src="/api/workspace.svg" alt="Workspace SVG preview"
+         onerror="this.alt='Failed to load – is the dev server running?'" />
+    <div class="loading-overlay" id="loading-overlay">Loading…</div>
+  </div>
+
+  <!-- ── Current URL ── -->
+  <div class="url-bar" id="url-bar">
+    GET <span>/api/workspace.svg</span>
+  </div>
+
+  <!-- ── Notes ── -->
+  <details>
+    <summary>ℹ About auto-refresh &amp; GitHub caching</summary>
+    <p>
+      This preview page refreshes the SVG <em>client-side</em> every minute by
+      appending a cache-busting query parameter (<code>?_t=…</code>).
+      The serverless function itself returns <code>Cache-Control: no-cache, no-store</code>
+      so <strong>your browser and direct API callers always get a fresh time</strong>.
+    </p>
+    <p style="margin-top:0.5rem"><strong>GitHub README caching limitation</strong></p>
+    <ul>
+      <li>GitHub proxies all images in Markdown through <em>camo</em>, its image CDN.</li>
+      <li>Camo currently caches images for <strong>~5 minutes</strong>, regardless of your
+          <code>Cache-Control</code> headers.  There is no documented way to bypass this.</li>
+      <li>Practical impact: the clock in a GitHub README will be up to 5 minutes stale
+          for any given viewer.  This is inherent to GitHub's infrastructure and is
+          <em>not</em> a bug in this project.</li>
+      <li>For accurate real-time display, link directly to
+          <code>/api/workspace.svg</code> in a browser or client that respects
+          <code>no-store</code>.</li>
+    </ul>
+  </details>
+
+</main>
+
+<script>
+  "use strict";
+
+  const img       = document.getElementById("preview-img");
+  const urlBar    = document.getElementById("url-bar");
+  const overlay   = document.getElementById("loading-overlay");
+  const countdown = document.getElementById("countdown");
+  const tzSelect  = document.getElementById("tz-select");
+  const customTzField = document.getElementById("custom-tz-field");
+  const customTz  = document.getElementById("custom-tz");
+  const timeInput = document.getElementById("time-override");
+  const autoChk   = document.getElementById("auto-refresh");
+  const btnRefresh = document.getElementById("btn-refresh");
+  const btnTab    = document.getElementById("btn-open-tab");
+
+  let countdownVal = 60;
+  let countdownTimer = null;
+
+  // ── Build the API URL ────────────────────────────────────────────────────
+  function buildUrl(bustCache = true) {
+    const params = new URLSearchParams();
+
+    const tz = tzSelect.value === "custom"
+      ? customTz.value.trim()
+      : tzSelect.value;
+    if (tz && tz !== "Asia/Kolkata") params.set("tz", tz);
+
+    const t = timeInput.value.trim();
+    if (/^([01]\d|2[0-3]):[0-5]\d$/.test(t)) params.set("t", t);
+
+    if (bustCache) params.set("_t", Date.now());
+
+    const qs = params.toString();
+    return "/api/workspace.svg" + (qs ? "?" + qs : "");
+  }
+
+  // ── Load (or reload) the SVG ─────────────────────────────────────────────
+  function load() {
+    const url = buildUrl(true);
+    overlay.classList.add("visible");
+
+    // Update URL bar
+    const display = buildUrl(false);
+    urlBar.innerHTML = "GET <span>" + display + "</span>";
+
+    img.onload = () => overlay.classList.remove("visible");
+    img.onerror = () => overlay.classList.remove("visible");
+    img.src = url;
+
+    resetCountdown();
+  }
+
+  // ── Countdown timer ──────────────────────────────────────────────────────
+  function resetCountdown() {
+    clearInterval(countdownTimer);
+    countdownVal = 60;
+    countdown.textContent = countdownVal;
+
+    if (!autoChk.checked) return;
+
+    countdownTimer = setInterval(() => {
+      countdownVal--;
+      countdown.textContent = countdownVal;
+      if (countdownVal <= 0) load();
+    }, 1000);
+  }
+
+  // ── Custom timezone field visibility ────────────────────────────────────
+  tzSelect.addEventListener("change", () => {
+    customTzField.style.display = tzSelect.value === "custom" ? "" : "none";
+  });
+
+  // ── Wire up buttons ──────────────────────────────────────────────────────
+  btnRefresh.addEventListener("click", load);
+
+  btnTab.addEventListener("click", () => {
+    window.open(buildUrl(false), "_blank");
+  });
+
+  autoChk.addEventListener("change", () => {
+    if (autoChk.checked) {
+      resetCountdown();
+    } else {
+      clearInterval(countdownTimer);
+      countdown.textContent = "–";
+    }
+  });
+
+  // Refresh on Enter in override fields
+  [timeInput, customTz].forEach(el =>
+    el.addEventListener("keydown", e => { if (e.key === "Enter") load(); })
+  );
+
+  // ── Initial load ─────────────────────────────────────────────────────────
+  load();
+</script>
+</body>
+</html>

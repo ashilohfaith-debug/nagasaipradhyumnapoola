@@ -10,7 +10,107 @@ compatible with GitHub README `<img>` embeds.
 
 ---
 
-## Main Algorithm / Workflow
+## Architecture
+
+The project uses a three-layer architecture:
+
+1. **SVG Template Layer** (`src/template.svg`) — static file containing the base64-embedded pixel-art GIF as a raster background and a `{{TIME}}` placeholder in the clock overlay group.
+2. **Business Logic Layer** (`src/clock.ts`, `src/renderer.ts`, `src/config.ts`) — pure TypeScript modules that handle time formatting, timezone conversion, and SVG template injection.
+3. **HTTP Layer** (`api/workspace.ts`) — a Vercel serverless function that wires HTTP requests to the renderer and returns the final SVG with appropriate headers.
+
+```
+Client Request
+     │
+     ▼
+api/workspace.ts  ──parse query params──►  validate tz / t
+     │
+     ▼
+src/renderer.ts   ──load template──►  src/template.svg (cached)
+     │                                        │
+     ├──formatTime()──►  src/clock.ts         │
+     │                        │               │
+     │◄───FormattedTime────────               │
+     │◄───SVG string (base64 bg + clock)──────
+     │
+     ▼
+HTTP Response: image/svg+xml, no-cache headers
+```
+
+---
+
+## Components and Interfaces
+
+### `src/config.ts`
+Exports all named constants for canvas dimensions, clock position, colours, glow filter parameters, and HTTP cache headers. No functions — pure configuration.
+
+### `src/clock.ts`
+| Export | Signature | Purpose |
+|---|---|---|
+| `padTwo` | `(n: number) => string` | Zero-pad a number to 2 digits |
+| `formatTime` | `(date?: Date, timezone?: string) => FormattedTime` | Convert a Date to HH:MM in a given IANA timezone |
+| `currentTime` | `(timezone?: string) => FormattedTime` | Convenience wrapper for `formatTime(new Date(), tz)` |
+| `isValidTimezone` | `(tz: string) => boolean` | Validate an IANA timezone string |
+
+### `src/renderer.ts`
+| Export | Signature | Purpose |
+|---|---|---|
+| `renderSVG` | `(options?: RenderOptions) => RenderResult` | Load template, inject time, return SVG + headers |
+| `bustTemplateCache` | `() => void` | Clear in-memory template cache (used in tests) |
+
+### `api/workspace.ts`
+Vercel serverless handler. Accepts `GET /api/workspace.svg` with optional `?tz=` and `?t=` query parameters. Delegates to `renderSVG` and writes all returned headers to the response.
+
+### `src/template.svg`
+Two-layer SVG document:
+- `<image id="background-art">` — the pixel-art GIF embedded as `data:image/gif;base64,…`
+- `<g id="clock-layer">` — bezel rect + ghost digits + `<text>{{TIME}}</text>`
+
+---
+
+## Data Models
+
+### `FormattedTime`
+```typescript
+interface FormattedTime {
+  display:  string;  // Full HH:MM string, e.g. "01:17"
+  hours:    string;  // Two-digit hour, e.g. "01"
+  minutes:  string;  // Two-digit minute, e.g. "17"
+}
+```
+
+### `RenderOptions`
+```typescript
+interface RenderOptions {
+  timezone?: string;        // IANA timezone string (default: "Asia/Kolkata")
+  at?:       Date | string; // Fixed point in time for testing or preview
+}
+```
+
+### `RenderResult`
+```typescript
+interface RenderResult {
+  svg:     string;                  // Fully-rendered SVG text (no {{TIME}} remaining)
+  headers: Record<string, string>;  // HTTP response headers
+}
+```
+
+### Clock constants (from `src/config.ts`)
+| Constant | Type | Value | Description |
+|---|---|---|---|
+| `CANVAS_WIDTH` | `number` | `1920` | Source image width in px |
+| `CANVAS_HEIGHT` | `number` | `1080` | Source image height in px |
+| `CLOCK_BEZEL_X` | `number` | `915` | Bezel left edge (1920×1080 coords) |
+| `CLOCK_BEZEL_Y` | `number` | `229` | Bezel top edge |
+| `CLOCK_BEZEL_WIDTH` | `number` | `251` | Bezel width |
+| `CLOCK_BEZEL_HEIGHT` | `number` | `86` | Bezel height |
+| `CLOCK_TEXT_X` | `number` | `1040` | Digit text anchor X (centre of bezel) |
+| `CLOCK_TEXT_Y` | `number` | `291` | Digit text baseline Y |
+| `CLOCK_FONT_SIZE` | `number` | `52` | Font size in px |
+| `CLOCK_DIGIT_COLOR` | `string` | `"#FF2040"` | Active digit colour |
+| `CLOCK_DIGIT_DIM_COLOR` | `string` | `"#3a0010"` | Ghost/dim segment colour |
+| `DEFAULT_TIMEZONE` | `string` | `"Asia/Kolkata"` | Default IANA timezone |
+
+---
 
 ```mermaid
 sequenceDiagram
@@ -235,16 +335,16 @@ template.svg
 │   ├── <filter id="clockGlow">        — red LED glow
 │   │   ├── feFlood (flood-color: #FF2040)
 │   │   ├── feComposite (in operator)
-│   │   ├── feGaussianBlur (stdDeviation: 3.5)
+│   │   ├── feGaussianBlur (stdDeviation: 6)
 │   │   └── feMerge (blur ×2 + SourceGraphic)
 │   └── <filter id="bezelShadow">      — depth shadow on bezel
 │       └── feDropShadow
 │
-├── <image id="background-art">        — base64 GIF, 1024×576
+├── <image id="background-art">        — base64 GIF, 1920×1080
 │
 └── <g id="clock-layer">
     ├── <rect id="clock-bezel">        — dark rounded rect (#0a0005)
-    │   x=488, y=122, w=134, h=46, rx=4
+    │   x=915, y=229, w=251, h=86, rx=6
     ├── <text id="clock-ghost">        — "88:88" in dim red (#3a0010)
     └── <text id="clock-digits">       — {{TIME}} in bright red (#FF2040)
         filter="url(#clockGlow)"
@@ -254,21 +354,21 @@ template.svg
 
 ## Clock Position Constants (from `src/config.ts`)
 
-All coordinates reference the 1024 × 576 source image.
+All coordinates reference the 1920 × 1080 source image.
 
 | Constant | Value | Notes |
 |---|---|---|
-| `CLOCK_BEZEL_X` | `488` | Left edge of bezel |
-| `CLOCK_BEZEL_Y` | `122` | Top edge of bezel |
-| `CLOCK_BEZEL_WIDTH` | `134` | Covers the artwork clock display |
-| `CLOCK_BEZEL_HEIGHT` | `46` | |
-| `CLOCK_BEZEL_RX` | `4` | Corner radius |
-| `CLOCK_TEXT_X` | `555` | Horizontal centre (488 + 134/2) |
-| `CLOCK_TEXT_Y` | `155` | Vertical baseline (122 + 46 × 0.72) |
-| `CLOCK_FONT_SIZE` | `28` | px |
+| `CLOCK_BEZEL_X` | `915` | Left edge of bezel |
+| `CLOCK_BEZEL_Y` | `229` | Top edge of bezel |
+| `CLOCK_BEZEL_WIDTH` | `251` | Covers the artwork clock display |
+| `CLOCK_BEZEL_HEIGHT` | `86` | |
+| `CLOCK_BEZEL_RX` | `6` | Corner radius |
+| `CLOCK_TEXT_X` | `1040` | Horizontal centre (915 + 251/2) |
+| `CLOCK_TEXT_Y` | `291` | Vertical baseline (229 + 86 × 0.72) |
+| `CLOCK_FONT_SIZE` | `52` | px |
 | `CLOCK_DIGIT_COLOR` | `"#FF2040"` | Red-pink matching reference |
 | `CLOCK_DIGIT_DIM_COLOR` | `"#3a0010"` | Ghost segments |
-| `GLOW_STD_DEVIATION` | `3.5` | Blur radius |
+| `GLOW_STD_DEVIATION` | `6` | Blur radius |
 
 ---
 
@@ -299,13 +399,40 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
 
 ## Correctness Properties
 
-- **∀ valid dates d, timezones tz:** `formatTime(d, tz).display` matches `/^\d{2}:\d{2}$/`
-- **∀ integers n ∈ [0, 59]:** `padTwo(n).length === 2`
-- **∀ integers n ∈ [0, 9]:** `padTwo(n)[0] === '0'`
-- **∀ render calls:** `renderSVG().svg` does not contain the string `"{{TIME}}"`
-- **∀ render calls:** `renderSVG().headers["Cache-Control"]` contains `"no-store"`
-- **Midnight invariant:** `formatTime(midnight, tz).hours !== "24"`
-- **Idempotency:** `renderSVG({ at: d }).svg === renderSVG({ at: d }).svg` (same date → same output)
+### Property 1: HH:MM format invariant
+For all valid dates `d` and valid IANA timezones `tz`, `formatTime(d, tz).display` matches `/^\d{2}:\d{2}$/`.
+
+**Validates: Requirements 1.1**
+
+### Property 2: padTwo length invariant
+For all integers `n` in `[0, 59]`, `padTwo(n)` returns a string of length exactly 2.
+
+**Validates: Requirements 1.2**
+
+### Property 3: Leading zero invariant
+For all integers `n` in `[0, 9]`, `padTwo(n)[0] === '0'` (leading zero is always present).
+
+**Validates: Requirements 1.2**
+
+### Property 4: Placeholder replacement invariant
+For all render calls, `renderSVG().svg` does not contain the literal string `"{{TIME}}"`.
+
+**Validates: Requirements 1.3**
+
+### Property 5: Cache-Control header invariant
+For all render calls, `renderSVG().headers["Cache-Control"]` contains both `"no-cache"` and `"no-store"`.
+
+**Validates: Requirements 1.4**
+
+### Property 6: Midnight invariant
+For any date representing midnight, `formatTime(date, tz).hours` is `"00"`, never `"24"`.
+
+**Validates: Requirements 1.1**
+
+### Property 7: Idempotency
+For any fixed date `d`, `renderSVG({ at: d }).svg === renderSVG({ at: d }).svg` — same input always produces the same SVG output.
+
+**Validates: Requirements 1.3**
 
 ---
 

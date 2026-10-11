@@ -6,8 +6,8 @@
 // ---------------------------------------------------------------------------
 // Canvas / image dimensions (must match the source artwork)
 // ---------------------------------------------------------------------------
-export const CANVAS_WIDTH = 1024;
-export const CANVAS_HEIGHT = 576;
+export const CANVAS_WIDTH = 1920;
+export const CANVAS_HEIGHT = 1080;
 
 // ---------------------------------------------------------------------------
 // Timezone
@@ -21,23 +21,23 @@ export const DEFAULT_TIMEZONE = "Asia/Kolkata";
 
 /**
  * The clock in the reference artwork sits on the shelf, roughly centre-right.
- * Pixel measurements were taken from the 1024 × 576 source image.
+ * Pixel measurements taken from the actual 1920 × 1080 source image.
  *
- *   Shelf top edge  ≈ y 118
+ *   Shelf top edge  ≈ y 229
  *   Clock bezel:
- *     left edge     ≈ x 488
- *     right edge    ≈ x 622   → width  ≈ 134
- *     top edge      ≈ y 122
- *     bottom edge   ≈ y 168   → height ≈  46
+ *     left edge     ≈ x 915
+ *     right edge    ≈ x 1166  → width  ≈ 251
+ *     top edge      ≈ y 229
+ *     bottom edge   ≈ y 315   → height ≈  86
  */
-export const CLOCK_BEZEL_X = 488;
-export const CLOCK_BEZEL_Y = 122;
-export const CLOCK_BEZEL_WIDTH = 134;
-export const CLOCK_BEZEL_HEIGHT = 46;
-export const CLOCK_BEZEL_RX = 4; // corner radius (px)
+export const CLOCK_BEZEL_X = 915;
+export const CLOCK_BEZEL_Y = 229;
+export const CLOCK_BEZEL_WIDTH = 251;
+export const CLOCK_BEZEL_HEIGHT = 86;
+export const CLOCK_BEZEL_RX = 6; // corner radius (px)
 export const CLOCK_BEZEL_FILL = "#0a0005";
 export const CLOCK_BEZEL_STROKE = "#3a0020";
-export const CLOCK_BEZEL_STROKE_WIDTH = 1;
+export const CLOCK_BEZEL_STROKE_WIDTH = 2;
 export const CLOCK_BEZEL_OPACITY = 0.88;
 
 // ---------------------------------------------------------------------------
@@ -45,10 +45,10 @@ export const CLOCK_BEZEL_OPACITY = 0.88;
 // ---------------------------------------------------------------------------
 
 /** Horizontal centre of the bezel */
-export const CLOCK_TEXT_X = CLOCK_BEZEL_X + CLOCK_BEZEL_WIDTH / 2; // 555
+export const CLOCK_TEXT_X = CLOCK_BEZEL_X + CLOCK_BEZEL_WIDTH / 2; // 1040
 /** Vertical baseline of the digit text (optical centre of bezel) */
-export const CLOCK_TEXT_Y = CLOCK_BEZEL_Y + CLOCK_BEZEL_HEIGHT * 0.72; // ≈ 155
-export const CLOCK_FONT_SIZE = 28; // px
+export const CLOCK_TEXT_Y = CLOCK_BEZEL_Y + CLOCK_BEZEL_HEIGHT * 0.72; // ≈ 291
+export const CLOCK_FONT_SIZE = 52; // px – scaled for 1920×1080
 /**
  * Font stack for the digital display look.
  * "Digital-7" is the most authentic pixel-clock face; we fall back to
@@ -68,7 +68,7 @@ export const CLOCK_DIGIT_DIM_COLOR = "#3a0010";
 // Glow filter
 // ---------------------------------------------------------------------------
 export const GLOW_FILTER_ID = "clockGlow";
-export const GLOW_STD_DEVIATION = 3.5; // blur radius
+export const GLOW_STD_DEVIATION = 6; // blur radius – scaled for 1920×1080
 export const GLOW_COLOR = "#FF2040";
 export const GLOW_FLOOD_OPACITY = 0.9;
 

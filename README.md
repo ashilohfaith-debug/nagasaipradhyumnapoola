@@ -25,7 +25,6 @@ AI systems · Quantitative finance · Research · Code
 [![GitHub](https://img.shields.io/badge/GitHub-nagasaipradhyumnapoola-111111?style=flat-square&logo=github&logoColor=white)](https://github.com/nagasaipradhyumnapoola)
 ![Focus](https://img.shields.io/badge/Focus-AI%20%2F%20Quant%20%2F%20Systems-111111?style=flat-square)
 ![Status](https://img.shields.io/badge/status-building-111111?style=flat-square)
-<img src="https://komarev.com/ghpvc/?username=nagasaipradhyumnapoola&style=flat-square&color=111111&label=visitors" alt="Profile visitors" />
 
 <br /><br />
 

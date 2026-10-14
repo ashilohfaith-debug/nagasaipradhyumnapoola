@@ -36,10 +36,7 @@ AI systems · Quantitative finance · Research · Code
 
 ## About
 
-I'm **Naga Sai Pradhyumna**, pursuing two degrees:
-
-- **B.Tech in Computer Science & Engineering** at SRM Institute of Science and Technology
-- **BS in Data Science** at IIT Madras
+I'm **Naga Sai Pradhyumna**!
 
 I'm interested in how complex systems work—and in building versions of my own. Lately, that means exploring **artificial intelligence, quantitative finance, mathematics, systems, and research**.
 

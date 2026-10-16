@@ -90,4 +90,10 @@ Exploring mathematics, problem solving, and the theoretical ideas behind the thi
 
 ---
 
-## <img width="40" height="40" alt="Picture1" src="https://github.com/user-attachments/assets/08d0c3f8-c2ff-4eb7-9847-09316314b49d" /> Let's connect!
+## <img width="30" height="30" alt="Picture1" src="https://github.com/user-attachments/assets/08d0c3f8-c2ff-4eb7-9847-09316314b49d" /> Let's connect!
+
+<a href="RESUME_LINK_HERE"><img src="https://img.shields.io/badge/-RESUME-0b0f19?style=for-the-badge&logo=googledocs&logoColor=2D9CFF" alt="Resume"/></a>
+<a href="PORTFOLIO_LINK_HERE"><img src="https://img.shields.io/badge/-PORTFOLIO-0b0f19?style=for-the-badge&logo=googlechrome&logoColor=2D9CFF" alt="Portfolio"/></a>
+<a href="https://www.linkedin.com/in/nagasaipradhyumnapoola/"><img src="https://img.shields.io/badge/-LINKEDIN-0b0f19?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iIzJEOUNGRiIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8%2BPC9zdmc%2B" alt="LinkedIn"/></a>
+<a href="mailto:nagasaipradhyumnapoola@gmail.com"><img src="https://img.shields.io/badge/-EMAIL-0b0f19?style=for-the-badge&logo=gmail&logoColor=2D9CFF" alt="Email"/></a>
+<a href="https://github.com/nagasaipradhyumnapoola"><img src="https://img.shields.io/badge/-GITHUB-0b0f19?style=for-the-badge&logo=github&logoColor=2D9CFF" alt="GitHub"/></a>

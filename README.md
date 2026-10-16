@@ -1,34 +1,18 @@
 <div align="center">
 
-<img src="./assets/wallpaper.gif" width="100%" alt="Pixel-art animated workspace" />
+<img src="https://readme-typing-svg.demolab.com?font=Sora&amp;weight=600&amp;size=38&amp;duration=2000&amp;pause=1000&amp;repeat=false&amp;color=2D9CFF&amp;vCenter=true&amp;width=520&amp;height=60&amp;lines=Hey%2C+I%27m+Naga+Sai" alt="Hey, I'm Naga Sai"/>
 
-<br />
+</div>
 
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=25&duration=2700&pause=900&color=FFFFFF&center=true&vCenter=true&width=900&lines=Hey%2C+I'm+Pradhyumna.;AI+%C2%B7+Quant+%C2%B7+Systems+%C2%B7+Research;research+%2B+code+%2B+math+%2B+chaos;probably+building+something."
-  />
-  <img
-    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=25&duration=2700&pause=900&color=111111&center=true&vCenter=true&width=900&lines=Hey%2C+I'm+Pradhyumna.;AI+%C2%B7+Quant+%C2%B7+Systems+%C2%B7+Research;research+%2B+code+%2B+math+%2B+chaos;probably+building+something."
-    alt="Hey, I'm Pradhyumna — AI, quant, systems, and research"
-  />
-</picture>
+<div align="center">
 
-<br />
+<img src="https://readme-typing-svg.demolab.com?font=Plus+Jakarta+Sans&amp;weight=300&amp;size=15&amp;duration=3500&amp;pause=800&amp;color=2D9CFF&amp;vCenter=true&amp;width=680&amp;height=45&amp;lines=Creator+%26+Lead+Developer+%40+Second+Brain+AI;Founder+%26+President+%40+AURA;Intern+%40+Techcora+Corporation+Pvt+Ltd;Growth+Admin+%40+Vertex+SRM;Founder+%40+PathMentor;Pursuing+B.Tech+CSE+%40+SRM+IST;Pursuing+B.S.+Data+Science+%40+IIT+Madras" alt="Naga Sai Pradhyumna Poola: Creator and Lead Developer at Second Brain AI, Founder and President at AURA, Founder at PathMentor, and more"/>
 
-<strong>Naga Sai Pradhyumna</strong><br />
-AI systems · Quantitative finance · Research · Code
+</div>
 
-<br /><br />
+<br/>
 
-[![GitHub](https://img.shields.io/badge/GitHub-nagasaipradhyumnapoola-111111?style=flat-square&logo=github&logoColor=white)](https://github.com/nagasaipradhyumnapoola)
-![Focus](https://img.shields.io/badge/Focus-AI%20%2F%20Quant%20%2F%20Systems-111111?style=flat-square)
-![Status](https://img.shields.io/badge/status-building-111111?style=flat-square)
-
-<br /><br />
-
-<em>19-year-old builder exploring the space between research papers, terminals, mathematics, and unreasonable ideas.</em>
+<em>19 y/o builder exploring the space between research papers, terminals, mathematics, and unreasonable ideas.</em>
 
 </div>
 
@@ -90,7 +74,7 @@ Exploring mathematics, problem solving, and the theoretical ideas behind the thi
 
 <br/>
 
-## Let's connect!
+## Let's connect
 
 <a href="https://portifolio-web-657k.vercel.app/#intro"><img src="https://img.shields.io/badge/-PORTFOLIO-0b0f19?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=2D9CFF" alt="Portfolio"/></a>
 <a href="https://www.linkedin.com/in/nagasaipradhyumnapoola/"><img src="https://img.shields.io/badge/-LINKEDIN-0b0f19?style=for-the-badge&amp;logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iIzJEOUNGRiIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8%2BPC9zdmc%2B" alt="LinkedIn"/></a>

@@ -92,14 +92,4 @@ Exploring mathematics, problem solving, and the theoretical ideas behind the thi
 
 ---
 
-<div align="center">
-
-### Still building.
-
-<sub>AI · QUANT · SYSTEMS · MATHEMATICS · RESEARCH</sub>
-
-<br /><br />
-
-<a href="https://github.com/nagasaipradhyumnapoola">github.com/nagasaipradhyumnapoola</a>
-
-</div>
+<img width="80" height="80" alt="Picture1" src="https://github.com/user-attachments/assets/08d0c3f8-c2ff-4eb7-9847-09316314b49d" />

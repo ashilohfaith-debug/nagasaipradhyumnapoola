@@ -1,19 +1,21 @@
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Sora&amp;weight=600&amp;size=30&amp;duration=2000&amp;pause=1000&amp;repeat=false&amp;color=2D9CFF&amp;center=true&amp;vCenter=true&amp;width=520&amp;height=60&amp;lines=Hey%2C+I%27m+Naga+Sai" alt="Hey, I'm Naga Sai"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Plus+Jakarta+Sans&amp;weight=300&amp;size=17&amp;duration=3500&amp;pause=800&amp;color=2D9CFF&amp;center=true&amp;vCenter=true&amp;width=680&amp;height=45&amp;lines=Creator+%26+Lead+Developer+%40+Second+Brain+AI;Founder+%26+President+%40+AURA;Intern+%40+Techcora+Corporation+Pvt+Ltd;Growth+Admin+%40+Vertex+SRM;Founder+%40+PathMentor;Pursuing+B.Tech+CSE+%40+SRM+IST;Pursuing+B.S.+Data+Science+%40+IIT+Madras" alt="Naga Sai Pradhyumna Poola: Creator and Lead Developer at Second Brain AI, Founder and President at AURA, Founder at PathMentor, and more"/>
+</p>
+
 <div align="center">
 
-<img width="800" height="350" alt="Picture2" src="https://github.com/user-attachments/assets/38a107e5-751d-408f-8f71-d1360263e0fc" />
+<img width="700" height="350" alt="Picture2" src="https://github.com/user-attachments/assets/38a107e5-751d-408f-8f71-d1360263e0fc" />
 
 </div>
 
 <br/>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Sora&amp;weight=600&amp;size=38&amp;duration=2000&amp;pause=1000&amp;repeat=false&amp;color=2D9CFF&amp;center=true&amp;vCenter=true&amp;width=520&amp;height=60&amp;lines=Hey%2C+I%27m+Naga+Sai" alt="Hey, I'm Naga Sai"/>
-  <img src="https://readme-typing-svg.demolab.com?font=Plus+Jakarta+Sans&amp;weight=300&amp;size=17&amp;duration=3500&amp;pause=800&amp;color=2D9CFF&amp;center=true&amp;vCenter=true&amp;width=680&amp;height=45&amp;lines=Creator+%26+Lead+Developer+%40+Second+Brain+AI;Founder+%26+President+%40+AURA;Intern+%40+Techcora+Corporation+Pvt+Ltd;Growth+Admin+%40+Vertex+SRM;Founder+%40+PathMentor;Pursuing+B.Tech+CSE+%40+SRM+IST;Pursuing+B.S.+Data+Science+%40+IIT+Madras" alt="Naga Sai Pradhyumna Poola: Creator and Lead Developer at Second Brain AI, Founder and President at AURA, Founder at PathMentor, and more"/>
-</p>
-
 ## About
 
 I'm a 19 y/o builder somewhere between research papers, systems, quant finance, mathematical rabbit holes, and unreasonable ideas.
+
+<br/>
 
 ## Building: Second Brain AI
 
@@ -24,6 +26,8 @@ memory → context → reasoning → agents → execution
 ```
 
 Current areas of exploration: `memory systems` · `agents` · `RAG` · `voice` · `tool use` · `local AI`
+
+<br/>
 
 ## Communities
 
@@ -38,6 +42,8 @@ Contributing to technical community building, engineering culture, and experimen
 ### SRM Ramanujan Mathematics Club
 
 Exploring mathematics, problem solving, and the theoretical ideas behind the things I build.
+
+<br/>
 
 ## Tools I use
 

@@ -88,8 +88,6 @@ Exploring mathematics, problem solving, and the theoretical ideas behind the thi
 
 </div>
 
-**AI / ML:** `Agents` · `RAG` · `Embeddings` · `Vector Search` · `Memory Systems` · `NumPy` · `Pandas` · `Scikit-learn`
-
 ---
 
-<img width="80" height="80" alt="Picture1" src="https://github.com/user-attachments/assets/08d0c3f8-c2ff-4eb7-9847-09316314b49d" />
+## <img width="40" height="40" alt="Picture1" src="https://github.com/user-attachments/assets/08d0c3f8-c2ff-4eb7-9847-09316314b49d" /> Let's connect!

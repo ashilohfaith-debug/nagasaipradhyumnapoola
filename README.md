@@ -1,6 +1,13 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Sora&amp;weight=600&amp;size=30&amp;duration=2000&amp;pause=1000&amp;repeat=false&amp;color=2D9CFF&amp;center=true&amp;vCenter=true&amp;width=520&amp;height=60&amp;lines=Hey%2C+I%27m+Naga+Sai" alt="Hey, I'm Naga Sai"/>
-  <img src="https://readme-typing-svg.demolab.com?font=Plus+Jakarta+Sans&amp;weight=300&amp;size=17&amp;duration=3500&amp;pause=800&amp;color=2D9CFF&amp;center=true&amp;vCenter=true&amp;width=680&amp;height=45&amp;lines=Creator+%26+Lead+Developer+%40+Second+Brain+AI;Founder+%26+President+%40+AURA;Intern+%40+Techcora+Corporation+Pvt+Ltd;Growth+Admin+%40+Vertex+SRM;Founder+%40+PathMentor;Pursuing+B.Tech+CSE+%40+SRM+IST;Pursuing+B.S.+Data+Science+%40+IIT+Madras" alt="Naga Sai Pradhyumna Poola: Creator and Lead Developer at Second Brain AI, Founder and President at AURA, Founder at PathMentor, and more"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Sora&amp;weight=600&amp;size=38&amp;duration=2000&amp;pause=1000&amp;repeat=false&amp;color=8CA3D4&amp;center=true&amp;vCenter=true&amp;width=1000&amp;height=52&amp;lines=Hey%2C+I%27m+Naga+Sai">
+    <img align="top" src="https://readme-typing-svg.demolab.com?font=Sora&amp;weight=600&amp;size=38&amp;duration=2000&amp;pause=1000&amp;repeat=false&amp;color=2B3A5C&amp;center=true&amp;vCenter=true&amp;width=1000&amp;height=52&amp;lines=Hey%2C+I%27m+Naga+Sai" alt="Hey, I'm Naga Sai"/>
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Plus+Jakarta+Sans&amp;weight=300&amp;size=22&amp;duration=3500&amp;pause=800&amp;color=8CA3D4&amp;center=true&amp;vCenter=true&amp;width=1000&amp;height=36&amp;lines=Creator+%26+Lead+Developer+%40+Second+Brain+AI;Founder+%26+President+%40+AURA;Intern+%40+Techcora+Corporation+Pvt+Ltd;Growth+Admin+%40+Vertex+SRM;Founder+%40+PathMentor;Pursuing+B.Tech+CSE+%40+SRM+IST;Pursuing+B.S.+Data+Science+%40+IIT+Madras">
+    <img align="top" src="https://readme-typing-svg.demolab.com?font=Plus+Jakarta+Sans&amp;weight=300&amp;size=22&amp;duration=3500&amp;pause=800&amp;color=2B3A5C&amp;center=true&amp;vCenter=true&amp;width=1000&amp;height=36&amp;lines=Creator+%26+Lead+Developer+%40+Second+Brain+AI;Founder+%26+President+%40+AURA;Intern+%40+Techcora+Corporation+Pvt+Ltd;Growth+Admin+%40+Vertex+SRM;Founder+%40+PathMentor;Pursuing+B.Tech+CSE+%40+SRM+IST;Pursuing+B.S.+Data+Science+%40+IIT+Madras" alt="Naga Sai Pradhyumna Poola: Creator and Lead Developer at Second Brain AI, Founder and President at AURA, Founder at PathMentor, and more"/>
+  </picture>
+  <img align="top" src="https://github.com/nagasaipradhyumnapoola/nagasaipradhyumnapoola/raw/main/assets/wallpaper.gif" alt="pixel animated workspace" width="100%"/>
 </p>
 
 <div align="center">

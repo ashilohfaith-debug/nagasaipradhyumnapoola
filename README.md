@@ -12,7 +12,7 @@
 
 <p align="center">
   <a href="https://live-clock-shiloh.vercel.app/">
-    <img src="https://live-clock-shiloh.vercel.app/clock" alt="Live Clock" width="100%" />
+    <img src="https://live-clock-shiloh.vercel.app/clock" alt="Live Clock" width="80%" />
   </a>
 </p>
 

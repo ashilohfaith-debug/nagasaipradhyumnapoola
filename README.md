@@ -32,27 +32,27 @@ At **Second Brain AI**, we're exploring personal AI that can do more than just a
 
 
 
-## Tools I use
+## Tech Stack
 
 <div align="center">
 
-**Languages**<br />
-<img src="https://skillicons.dev/icons?i=python,cpp,c,java,js,ts&theme=dark" alt="Python, C++, C, Java, JavaScript, and TypeScript" />
+**Languages**<br/>
 
-<br /><br />
+<img src="https://skillicons.dev/icons?i=python,cpp,c,java,js,ts&amp;theme=dark" height="30" alt="Python, C++, C, Java, JavaScript, and TypeScript"/>
 
-**Web**<br />
-<img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,html,css&theme=dark" alt="React, Next.js, Node.js, HTML, and CSS" />
+**Web**<br/>
 
-<br /><br />
+<img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,html,css&amp;theme=dark" height="30" alt="React, Next.js, Node.js, HTML, and CSS"/>
 
-**Data & backend**<br />
-<img src="https://skillicons.dev/icons?i=postgres,supabase,sqlite,firebase&theme=dark" alt="PostgreSQL, Supabase, SQLite, and Firebase" />
+**Data & backend**<br/>
 
-<br /><br />
+<img src="https://skillicons.dev/icons?i=postgres,supabase,sqlite,firebase&amp;theme=dark" height="30" alt="PostgreSQL, Supabase, SQLite, and Firebase"/>
 
-**Systems & tools**<br />
-<img src="https://skillicons.dev/icons?i=docker,linux,git,github,vscode,vercel&theme=dark" alt="Docker, Linux, Git, GitHub, VS Code, and Vercel" />
+**Systems & tools**<br/>
+
+<img src="https://skillicons.dev/icons?i=docker,linux,git,github,vscode,vercel&amp;theme=dark" height="30" alt="Docker, Linux, Git, GitHub, VS Code, and Vercel"/>
+
+</div>
 
 </div>
 

@@ -24,9 +24,9 @@ I'm a 19 y/o builder somewhere between research papers, systems, quant finance, 
 
 <br/>
 
-## <img width="33" height="25" alt="Screenshot 2026-10-21 155614" src="https://github.com/user-attachments/assets/b4373c17-444d-40fb-9f09-0e86618a3dd9" /> Second Brain AI
+## <img width="32" height="25" alt="Screenshot 2026-10-21 155614" src="https://github.com/user-attachments/assets/b4373c17-444d-40fb-9f09-0e86618a3dd9" /> Second Brain AI
 
-At **Second Brain AI** we're exploring personal AI that can do more than answer prompts: software that remembers context, understands what you're working on, and becomes useful across your digital life.
+At **Second Brain AI**, we're exploring personal AI that can do more than just answer prompts: software that remembers context, understands what you're working on, and becomes useful across your digital life.
 
 <br/>
 

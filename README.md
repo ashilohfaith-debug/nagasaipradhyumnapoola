@@ -18,39 +18,19 @@
 
 <br/>
 
-## About
+## About me
 
 I'm a 19 y/o builder somewhere between research papers, systems, quant finance, mathematical rabbit holes, and unreasonable ideas.
 
 <br/>
 
-## Building: Second Brain AI
+## What Second Brain AI is
 
-I'm the **Founder of Second Brain AI**, where we're exploring personal AI that can do more than answer prompts: software that remembers context, understands what you're working on, and becomes useful across your digital life.
-
-```text
-memory → context → reasoning → agents → execution
-```
-
-Current areas of exploration: `memory systems` · `agents` · `RAG` · `voice` · `tool use` · `local AI`
+At **Second Brain AI** we're exploring personal AI that can do more than answer prompts: software that remembers context, understands what you're working on, and becomes useful across your digital life.
 
 <br/>
 
-## Communities
 
-### AURA · Founder & President
-
-A student technical community focused on AI, ML, web, data, research, and hackathons—with an emphasis on learning by building and shipping together.
-
-### Vertex SRM · Founding Team
-
-Contributing to technical community building, engineering culture, and experimentation.
-
-### SRM Ramanujan Mathematics Club
-
-Exploring mathematics, problem solving, and the theoretical ideas behind the things I build.
-
-<br/>
 
 ## Tools I use
 

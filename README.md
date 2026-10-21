@@ -10,11 +10,11 @@
   <img align="top" src="https://github.com/nagasaipradhyumnapoola/nagasaipradhyumnapoola/raw/main/assets/wallpaper.gif" alt="pixel animated workspace" width="100%"/>
 </p>
 
-<div align="center">
-
-<img width="700" height="350" alt="Picture2" src="https://github.com/user-attachments/assets/38a107e5-751d-408f-8f71-d1360263e0fc" />
-
-</div>
+<p align="center">
+  <a href="https://live-clock-ouwm.vercel.app/">
+    <img src="https://live-clock-ouwm.vercel.app/clock" alt="Live Clock" width="100%" />
+  </a>
+</p>
 
 <br/>
 

@@ -26,7 +26,9 @@ I'm a 19 y/o builder somewhere between research papers, systems, quant finance, 
 
 ## What We’re Building at Second Brain AI
 
-At [**Second Brain AI**](https://www.linkedin.com/company/gowaiforusingaieasier/home/), we're exploring personal AI that can do more than just answer prompts: software that remembers context, understands what you're working on, and becomes useful across your digital life.
+At **Second Brain AI**, we're exploring personal AI that can do more than just answer prompts: software that remembers context, understands what you're working on, and becomes useful across your digital life.
+
+[Follow](https://www.linkedin.com/company/gowaiforusingaieasier/home/) for more updates!
 
 <br/>
 

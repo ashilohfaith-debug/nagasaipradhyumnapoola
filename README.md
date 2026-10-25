@@ -32,27 +32,9 @@ At **Second Brain AI**, we're exploring personal AI that can do more than just a
 
 <br/>
 
-## Tech Stack
+## Featured Work
 
-<div align="center">
 
-**Languages**<br/>
-
-<img src="https://skillicons.dev/icons?i=python,cpp,c,java,js,ts&amp;theme=dark" height="30" alt="Python, C++, C, Java, JavaScript, and TypeScript"/>
-
-**Web**<br/>
-
-<img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,html,css&amp;theme=dark" height="30" alt="React, Next.js, Node.js, HTML, and CSS"/>
-
-**Data & backend**<br/>
-
-<img src="https://skillicons.dev/icons?i=postgres,supabase,sqlite,firebase&amp;theme=dark" height="30" alt="PostgreSQL, Supabase, SQLite, and Firebase"/>
-
-**Systems & tools**<br/>
-
-<img src="https://skillicons.dev/icons?i=docker,linux,git,github,vscode,vercel&amp;theme=dark" height="30" alt="Docker, Linux, Git, GitHub, VS Code, and Vercel"/>
-
-</div>
 
 <br/>
 

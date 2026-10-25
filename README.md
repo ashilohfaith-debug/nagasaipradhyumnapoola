@@ -157,6 +157,7 @@ At **Second Brain AI**, we're exploring personal AI that can do more than just a
   </tr>
 
 <br/>
+<br/>
 
 ## Let's connect
 

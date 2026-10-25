@@ -37,11 +37,6 @@ At **Second Brain AI**, we're exploring personal AI that can do more than just a
   <!-- PROJECT 2: GPU MONTE CARLO -->
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/nagasaipradhyumnapoola/GPU-Accelerated-Monte-Carlo-Option-Pricing-Engine">
-        <img src="https://raw.githubusercontent.com/nagasaipradhyumnapoola/GPU-Accelerated-Monte-Carlo-Option-Pricing-Engine/main/graphs/benchmark_throughput.png" alt="GPU Monte Carlo Benchmark" width="100%" style="border-radius: 8px;"/>
-      </a>
-    </td>
-    <td width="50%" valign="top">
       <h3>⚡ <a href="https://github.com/nagasaipradhyumnapoola/GPU-Accelerated-Monte-Carlo-Option-Pricing-Engine">GPU Monte Carlo Option Pricing Engine</a></h3>
       <p><b>5 Million Simulated Paths · 57x Peak CUDA Acceleration</b></p>
       <p>High-throughput parallel simulation engine for financial derivatives pricing with microsecond execution and variance reduction.</p>
@@ -63,11 +58,6 @@ At **Second Brain AI**, we're exploring personal AI that can do more than just a
   <!-- PROJECT 3: AGENT HUB & BENCHMARK LAB -->
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/nagasaipradhyumnapoola/benchmark_agents">
-        <img src="https://raw.githubusercontent.com/nagasaipradhyumnapoola/benchmark_agents/main/docs/evidence/overview-desktop.png" alt="Agent Hub Benchmark Suite" width="100%" style="border-radius: 8px;"/>
-      </a>
-    </td>
-    <td width="50%" valign="top">
       <h3>🧪 <a href="https://github.com/nagasaipradhyumnapoola/benchmark_agents">Agent Hub & Benchmark Lab</a></h3>
       <p><b>Telemetry, Versioning & Comparative Evaluation for Autonomous Agents</b></p>
       <p>An end-to-end benchmarking lab to publish, discover, and rigorously benchmark open-source AI agents across local model runtimes (Ollama/vLLM) and cloud APIs.</p>
@@ -87,11 +77,6 @@ At **Second Brain AI**, we're exploring personal AI that can do more than just a
   </tr>
   <!-- PROJECT 4: INVENIO -->
   <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/nagasaipradhyumnapoola/Invenio">
-        <img src="https://raw.githubusercontent.com/nagasaipradhyumnapoola/nitrostack/main/assets/screenshots/nitrostack-studio.png" alt="Invenio MCP Studio" width="100%" style="border-radius: 8px;"/>
-      </a>
-    </td>
     <td width="50%" valign="top">
       <h3>🔬 <a href="https://github.com/nagasaipradhyumnapoola/Invenio">Invenio — AI Research Operating System</a></h3>
       <p><b>Model Context Protocol (MCP) Multi-Agent Research Synthesis</b></p>
@@ -113,11 +98,6 @@ At **Second Brain AI**, we're exploring personal AI that can do more than just a
   <!-- PROJECT 5: MEMORA-AI -->
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/nagasaipradhyumnapoola/Memora-AI">
-        <img src="https://raw.githubusercontent.com/nagasaipradhyumnapoola/Memora-AI/main/frontend/public/logo.png" alt="Memora AI" width="100%" style="border-radius: 8px; background: #0f172a; padding: 20px;"/>
-      </a>
-    </td>
-    <td width="50%" valign="top">
       <h3>🧠 <a href="https://github.com/nagasaipradhyumnapoola/Memora-AI">Memora-AI</a></h3>
       <p><b>Context Retention Browser Extension & Learning Graph</b></p>
       <p>An intelligent browser extension that turns passive browsing into a structured personal knowledge graph using semantic vector search.</p>
@@ -138,11 +118,6 @@ At **Second Brain AI**, we're exploring personal AI that can do more than just a
   <!-- PROJECT 6: INDIAN ALPHA -->
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/nagasaipradhyumnapoola/Trading_algo">
-        <img src="https://raw.githubusercontent.com/nagasaipradhyumnapoola/GPU-Accelerated-Monte-Carlo-Option-Pricing-Engine/main/graphs/call_greeks_profile.png" alt="Indian Alpha Market Engine" width="100%" style="border-radius: 8px;"/>
-      </a>
-    </td>
-    <td width="50%" valign="top">
       <h3>🐂 <a href="https://github.com/nagasaipradhyumnapoola/Trading_algo">Indian Alpha</a></h3>
       <p><b>Agentic NSE / BSE Opportunity-Discovery & Quant Floor</b></p>
       <p>A multi-agent market-wide quantitative decision-support system analyzing the entire Indian equity universe ahead of market open.</p>
@@ -162,11 +137,6 @@ At **Second Brain AI**, we're exploring personal AI that can do more than just a
   </tr>
   <!-- PROJECT 7: ROADTWIN -->
   <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/nagasaipradhyumnapoola/Road_Twin">
-        <img src="https://raw.githubusercontent.com/nagasaipradhyumnapoola/aura_club_web/main/public/aura/figure.webp" alt="RoadTwin Digital Twin" width="100%" style="border-radius: 8px;"/>
-      </a>
-    </td>
     <td width="50%" valign="top">
       <h3>🛣️ <a href="https://github.com/nagasaipradhyumnapoola/Road_Twin">RoadTwin (SIH #95)</a></h3>
       <p><b>Indian Road Digital Twin Reconstruction & Simulation Engine</b></p>

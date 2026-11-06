@@ -18,21 +18,21 @@
 
 <br/>
 
-## About me
+## an intro
 
 I'm a 19 y/o builder somewhere between research papers, systems, quant finance, mathematical rabbit holes, and unreasonable ideas.
 
 <br/>
 
-## What We’re Building at Second Brain AI
+## what we’re building at Second Brain AI
 
-At **Second Brain AI**, we're exploring personal AI that can do more than just answer prompts: software that remembers context, understands what you're working on, and becomes useful across your digital life.
+**Second Brain AI** works on artificial intelligence that remembers, reasons, and evolves with you.
 
-[Follow](https://www.linkedin.com/company/gowaiforusingaieasier/home/) for more updates!
+[Follow](https://www.linkedin.com/company/gowaiforusingaieasier/home/) for more updates and DM me to talk about it :)
 
 <br/>
 
-## Let's connect
+## wanna get to know me?
 
 <a href="https://portifolio-web-657k.vercel.app/#intro"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/-PORTFOLIO-000000?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=8CA3D4"><img src="https://img.shields.io/badge/-PORTFOLIO-FFFFFF?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=2B3A5C" alt="Portfolio"/></picture></a>
 <a href="https://www.linkedin.com/in/nagasaipradhyumnapoola/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/-LINKEDIN-000000?style=for-the-badge&amp;logo=data:image/svg%2Bxml;base64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iIzhDQTNENCIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8%2BPC9zdmc%2B&amp;logoColor=8CA3D4"><img src="https://img.shields.io/badge/-LINKEDIN-FFFFFF?style=for-the-badge&amp;logo=data:image/svg%2Bxml;base64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iIzJCM0E1QyIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8%2BPC9zdmc%2B&amp;logoColor=2B3A5C" alt="LinkedIn"/></picture></a>
